@@ -64,12 +64,3 @@ This tool is not affiliated with or endorsed by TikTok.
 Use at your own risk. Excessive or irresponsible use may result in restrictions on your TikTok account.
 
 ```
-
----
-
-Would you like me to:
-- Create a `.zip` package of the full repo?
-- Auto-publish this to GitHub via CLI instructions?
-
-Let me know how hands-off you want this process to be.
-```
