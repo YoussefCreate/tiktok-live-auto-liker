@@ -1,66 +1,47 @@
+# 🔥 TikTok Live Bot
 
+A powerful browser-based automation tool to send likes and comments on TikTok Live with a floating control panel and real-time counters.
 
-````markdown
-# 🔥 TikTok Live Auto-Liker
-
-A simple JavaScript tool that sends rapid likes (~111 per second) on TikTok Live by simulating the `'L'` key directly from your browser's DevTools Console.
-
-> ⚠️ For educational and testing purposes only. Use responsibly.
+Un outil puissant basé sur le navigateur pour envoyer automatiquement des likes et des commentaires sur TikTok Live, avec un panneau de contrôle flottant et des compteurs en temps réel.
 
 ---
 
-## 📦 Features
+## 🚀 Features | Fonctionnalités
 
-- ✅ No installation required – paste and run in Chrome DevTools
-- ⚡ Sends ~111 likes per second using real keyboard event simulation
-- 🧠 Lightweight and beginner-friendly
-- 🛑 Safe limit to avoid spamming too long (default: 3000 likes)
+| Feature (EN)             | Fonctionnalité (FR)                                 |
+|--------------------------|------------------------------------------------------|
+| 💓 Auto Liker            | 💓 Envoi automatique de likes (~111/sec)             |
+| 💬 Auto Commenter        | 💬 Commentaires automatiques avec messages aléatoires |
+| 🎛️ Floating UI Panel     | 🎛️ Panneau flottant avec contrôle en un clic         |
+| 📊 Live Counters         | 📊 Compteurs en temps réel (likes et commentaires)   |
+| ✏️ Fully Configurable    | ✏️ Entièrement personnalisable                       |
 
 ---
 
-## 🚀 How to Use
+## 💻 How to Use | Comment l’utiliser
 
-1. Open a **TikTok Live** stream in your browser (must be logged in).
-2. Open **DevTools**:  
-   `F12` or `Ctrl + Shift + I` → Go to the **Console** tab.
-3. Paste the contents of [`liker.js`](./liker.js) and press **Enter**.
-4. Run the auto-liker:
+### 1. Open TikTok Live in your browser  
+### 1. Ouvrez un Live TikTok dans votre navigateur
+
+### 2. Open DevTools → Console  
+Press `F12` or `Ctrl + Shift + I`  
+Allez dans **Outils de développement → Console**
+
+### 3. Paste the script from [`main.js`](./main.js) and hit Enter  
+### 3. Collez le script depuis [`main.js`](./main.js) et appuyez sur Entrée
+
+### 4. Use the floating panel to start auto-likes or comments  
+### 4. Utilisez le panneau pour lancer les likes ou les commentaires automatiques
+
+---
+
+## ⚙️ Customization | Personnalisation
+
+In the console, you can customize behavior with:
+
+Dans la console, vous pouvez personnaliser avec :
 
 ```js
-TikTokLiker.start();
-````
-
-5. To stop the script at any time:
-
-```js
-TikTokLiker.stop();
-```
-
----
-
-## ⚙️ Configuration (Optional)
-
-You can adjust values in the `liker.js` file before starting:
-
-```js
-// Change how many likes per second (approx)
-likesPerSecond = 111;
-
-// Set a maximum number of likes before auto-stop
-maxLikes = 3000;
-```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See [`LICENSE`](./LICENSE) for details.
-
----
-
-## 🧠 Disclaimer
-
-This tool is not affiliated with or endorsed by TikTok.
-Use at your own risk. Excessive or irresponsible use may result in restrictions on your TikTok account.
-
-```
+TikTokBot.setMessages(["🔥 Custom 1", "💯 Custom 2"]);
+TikTokBot.setDelay(2000, 5000); // Delay between comments (ms)
+TikTokBot.setLikeLimit(5000);   // Max likes to send
